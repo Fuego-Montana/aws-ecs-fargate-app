@@ -1,0 +1,13 @@
+aws_region   = "ap-southeast-2"
+project_name = "fargate-app"
+environment  = "dev"
+
+# After first ECR push, set this to your image URI, e.g.:
+# container_image = "123456789012.dkr.ecr.ap-southeast-2.amazonaws.com/fargate-app-dev:latest"
+# container_image = ""
+
+task_cpu      = 256
+task_memory   = 512
+desired_count = 1
+min_capacity  = 1
+max_capacity  = 4
